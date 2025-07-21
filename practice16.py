@@ -7,7 +7,9 @@ Bravely talking to his feet\
 Brave, brave, brave, brave Sir Robin\
 He beat a very brave retreat"
 
-line_s = line.split("\")
+s = line.split("\n")
+s = s[1 : len(s) : 2]
+s = "\n".join(s)
 
 
-print(line_s)
+print(s)
